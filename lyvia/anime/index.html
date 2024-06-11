@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      display: flex;
+    }
+
+    #principal {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      height: 200px;
+    }
+
+    button {
+      width: 50%;
+    }
+  </style>
+
+  <script>
+
+    function Cenario2() {
+
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += " <input> ";
+      conteudo += ' <p> Você pegou a lanterna e começou a explorar. Encontrou um espelho, que de repente se quebra e revela uma criatura atrás dele!: </p> "; ';
+      conteudo += ' <img src="Imagens/Imagem_2.gif"> ';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Cenario2()">Lutar</button> ';
+      conteudo += ' <button onclick="Cenario3()">Correr</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal2").append(conteudo);
+
+    }
+
+
+
+    function Cenario3() {
+
+      var conteudo = "";
+      conteudo += " <h1>Este é um h1</h1>";
+      conteudo += ' <br> ';
+      conteudo += ' <p> Voce esta no mundo Cyberpunk!: </p> "; ';
+      conteudo += ' <img src="Imagens/Imagem_3.gif"> ';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Cenario2()">Lutar</button> ';
+      conteudo += ' <button onclick="Cenario3()">Correr</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal2").append(conteudo);
+
+    }
+
+
+  </script>
+
+
+<script>
+
+    function Cenario2() {
+
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += " <input> ";
+      conteudo += ' <p> Você derrotou a criatura! Encontrou uma foto sua entre os destroços do espelho. Seu nome é Liam!: </p> "; ';
+      conteudo += ' <img src="Imagens/Imagem_2.gif"> ';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Cenario2()">Lutar</button> ';
+      conteudo += ' <button onclick="Cenario3()">Correr</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal3").append(conteudo);
+
+    }
+
+
+
+    function Cenario3() {
+
+      var conteudo = "";
+      conteudo += " <h1>Este é um h1</h1>";
+      conteudo += ' <br> ';
+      conteudo += ' <p> ocê tentou fugir, mas a criatura te alcançou e te matou sufocado com sua própria lanterna. O jogo reiniciou: </p> "; ';
+      conteudo += ' <img src="Imagens/Imagem_3.gif"> ';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Cenario2()">Lutar</button> ';
+      conteudo += ' <button onclick="Cenario3()">Correr</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal3").append(conteudo);
+
+    }
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id="principal">
+
+    <br>
+    <p> Você esta em uma viagem a negocios, e derrepente o avião tem problemas tecnicos e acaba caindo </p>
+    <img src="Imagens/OIG3.jpg">
+    <br>
+    <div style="width: 100%; display: flex;">
+
+     
+     
+    </div>
+    <br>
+
+
+    <div id="principal2">
+
+        <br>
+        <p> Você avistou os destroços do avião, deseja explorar? : </p>
+        <br>
+        <div style="width: 100%; display: flex;">
+   
+          <!-- ↓↓↓ Executa Funcoes ↓↓↓ -->
+          <button onclick="Cenario2()">Pegar a lanterna</button>
+          <button onclick="Cenario3()">Seguir em frente</button>
+         
+        </div>
+        <br>
+
+
+
+        <br>
+        <p> Você pegou a lanterna e começou a explorar. Encontrou um espelho, que de repente se quebra e revela uma criatura atrás dele!?: </p>
+        <img src="Imagens/OIG3 (1).jpg">
+        <br>
+        <div style="width: 100%; display: flex;">
+
+        <div id="principal3">
+
+            <br>
+            <p> O que você faz?: </p>
+            <img src="Imagens/Imagem_1.gif">
+            <br>
+            <div style="width: 100%; display: flex;">
+       
+              <!-- ↓↓↓ Executa Funcoes ↓↓↓ -->
+              <button onclick="Cenario2()">Lutar usando um caco de vidro como arma</button>
+              <button onclick="Cenario3()">Ou correr</button>
+             
+            </div>
+            <br>
+   
+
+  </div>
+</body>
+
+</html>
